@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <div id="suggestions"></div>
+            <button id="search-button">Search</button>
+            <button id="current-location">Get Current Location</button>
+            <button id="toggle-unit">℃ / ℉</button>
+        </div>
+        <div id="current-weather">
+            <h2 id="location"></h2>
+            <img id="weather-icon" alt="Weather icon">
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="weather-condition"></p>
+        </div>
+        <div id="forecast">
+            <h3>5-Day Forecast</h3>
+            <div id="forecast-cards"></div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>

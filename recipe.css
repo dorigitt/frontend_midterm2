@@ -1,0 +1,85 @@
+body {
+    font-family: "Rubik Bubbles", serif;
+    background-color: #bda956;
+    margin: 20px;
+}
+#search {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#suggestions {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+#suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+#suggestions div:hover {
+    background-color: #eee;
+}
+#recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.recipe-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 90%;
+}
+.close-modal {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+.favorites {
+    margin-top: 20px;
+}
+.favorite-recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

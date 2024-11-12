@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search App</title>
+    <link rel="stylesheet" href="recipe.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Recipe Search</h2>
+    <input type="text" id="search" placeholder="Type ingredients or dish names..." autocomplete="off">
+    <div id="suggestions"></div>
+    <div id="recipes"></div>
+    <div class="favorites">
+        <h3>Your Favorite Recipes</h3>
+        <div id="favorite-recipes" class="favorite-recipes"></div>
+    </div>
+
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">Close</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>
